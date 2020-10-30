@@ -30,3 +30,8 @@ test('Testando cpf undefined', () => {
     expect(cliente.validarCPF()).toBe(false);
 });
 
+    test('Testando cletras Maiúsculas', () => {
+        let cliente = new Cliente()
+        cliente.nome = "aula devops"
+        expect(cliente.nomeMaisculo()).toBe("AULA DEVOPS");
+});
